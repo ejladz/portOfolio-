@@ -1,0 +1,12 @@
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  .section {
+    min-height: 100vh; /* Use vh unit to cover the full viewport height */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
