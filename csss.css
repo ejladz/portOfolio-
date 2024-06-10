@@ -33,12 +33,15 @@ body, html {
     height: 100vh; /* Limit the height to the viewport height */
     position: absolute;
     top: 0;
+    column-gap: 10px;
 }
 
 .item1 {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
+    width: 430px;
+
 }
 
 .item2 {
@@ -46,6 +49,7 @@ body, html {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    width: 270px;
 }
 
 .item3 {
@@ -53,6 +57,7 @@ body, html {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
+    width: 545px;
 }
 
 .item4 {
@@ -63,6 +68,6 @@ body, html {
 }
 
 .item1 img, .item2 img, .item3 img, .item4 img {
-    max-height: 33vh; /* Each image will take up to one-third of the viewport height */
+    max-height: 50vh; /* Each image will take up to one-third of the viewport height */
     object-fit: cover;
 }
