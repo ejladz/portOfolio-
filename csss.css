@@ -34,40 +34,62 @@ body, html {
     position: absolute;
     top: 0;
     column-gap: 10px;
+    row-gap: 10PX;
 }
 
-.item1 {
+.item1 { /**/
+    grid-column-start: 1; 
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    width: 430px;
+    width: 465.8px;
+    height: 594.7px;
 
 }
 
-.item2 {
+.item2 { /*270*/
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
     width: 270px;
+    height: 343.3px;
 }
 
-.item3 {
+.item3 { /*545px*/
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
     width: 545px;
+    height: 194.8;
 }
 
-.item4 {
+.item4 { 
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
+    width: 422.2px;
+    height: 351.1px;
 }
 
 .item1 img, .item2 img, .item3 img, .item4 img {
     max-height: 50vh; /* Each image will take up to one-third of the viewport height */
     object-fit: cover;
+}
+
+
+
+
+.about-paragraph {
+    .about-paragraph {
+        display: flex; /* Use flexbox layout */
+        flex-direction: column; /* Stack children vertically */
+        justify-content: center; /* Center children vertically */
+        align-items: left; /* Center children horizontally */
+        height: 100vh; /* Take up full viewport height */
+
+}
+
 }
