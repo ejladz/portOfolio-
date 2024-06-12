@@ -6,12 +6,12 @@ body, html {
 
 
 .section {
-    min-height: 100vh; /* Use vh unit to cover the full viewport height */
+    min-height: 100vh; 
     width: 100%;
-    display: flex; /* Changed to flex for better control */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center children vertically */
-    align-items: center; /* Center children horizontally */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
 }
 
@@ -24,7 +24,7 @@ body, html {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     width: 100%;
-    height: 100vh; /* Limit the height to the viewport height */
+    height: 100vh; 
     position: absolute;
     top: 0;
     column-gap: 10px;
@@ -33,7 +33,7 @@ body, html {
 }
 
 #myHeader {
-    grid-column: 1 / -1; /* span across all columns */
+    grid-column: 1 / -1; 
     grid-row: 5; 
     color: black;
     padding: 20px;
@@ -42,7 +42,7 @@ body, html {
     font-family: 'Poppins';
     letter-spacing: 100px; 
     margin: 0; 
-    z-index: 10; /* the text is above the images */
+    z-index: 10; 
 }
 
 #welcome {
@@ -108,26 +108,81 @@ body, html {
 /*secmd page*/
 
 #about {
-    position: relative; /* Position relative to place inner elements absolutely */
-    background-image: url("placeholder.jpg"); /* The image used as the background */
-    background-attachment: fixed; /* Fix the background to create a parallax effect */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    position: relative; 
+    background-image: url("placeholder.jpg"); 
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
 
 .bg-text {
-    position: absolute; /* Absolute position for the container */
-    top: 50%; /* Position from the top */
-    left: 50%; /* Position from the left */
-    transform: translate(-50%, -50%); /* Center the container */
-    z-index: 2; /* Stack order */
-    width: 80%; /* Width of the container */
-    padding: 20px; /* Padding inside the container */
-    /* ... rest of your existing .bg-text styles ... */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    width: 80%; 
+    padding: 20px; 
+
 }
 
-/* Ensure the landing section also covers the full viewport height */
+
 #landing {
     min-height: 100vh;
+}
+
+
+.bg-image {
+    position: relative; 
+    height: 100vh; 
+    width: 100vw;
+    background-image: url('c:\Users\User\Downloads\Untitled design (39).png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    z-index: -2; 
+  }
+  
+  /* black tint overlay */
+  .bg-image::after {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(48, 38, 143, 0.5); 
+    z-index: -1; 
+  }
+
+  #work {
+    min-height: 100vh;
+
+  }
+
+
+
+
+  /*THIRD PAGE - work*/
+
+.work {
+    display: inline-block;
+    border: 1px solid rgb(153, 151, 151);
+    margin: 5px;
+    width: 200px;
+}
+
+.work .workdesc {
+    padding: 10px;
+    text-align: center;
+}
+
+.work:hover {
+    border: 1px solid rgb(97, 94, 94);
+}
+
+.work img{
+    width: 100%;
+    height: auto;
 }
