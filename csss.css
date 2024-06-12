@@ -1,21 +1,32 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%; /* Ensure the body takes full height */
+    height: 100%; 
 }
+
 
 .section {
     min-height: 100vh; /* Use vh unit to cover the full viewport height */
     width: 100%;
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
-    grid-template-rows: auto 1fr auto; /* Three rows with the middle row taking the remaining space */
+    display: flex; /* Changed to flex for better control */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
     text-align: center;
 }
 
+
+
 #myHeader {
-    grid-column: 1 / -1; /* Span across all columns */
-    grid-row: 3; /* Position at the third row */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-start: 1; 
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 1 / -1; /* span across all columns */
+    grid-row: 3; 
     color: black;
     padding: 20px;
     font-size: 110px;
@@ -93,22 +104,16 @@ body, html {
 
 /*secmd page*/
 
-.bg-image {
+#about {
+    position: relative; /* Position relative to place inner elements absolutely */
     background-image: url("placeholder.jpg"); /* The image used as the background */
-    filter: blur(8px); /* Blur effect for the background image */
-    -webkit-filter: blur(8px); /* For Safari */
-    height: 100%; /* Full height for the background */
+    background-attachment: fixed; /* Fix the background to create a parallax effect */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  
-  /* Text container styles */
-  .bg-text {
-    background-color: rgba(0,0,0, 0.4); /* Black background with opacity */
-    color: white; /* Text color */
-    font-weight: bold; /* Font weight for the text */
-    border: 3px solid #f1f1f1; /* Border around the text container */
+}
+
+.bg-text {
     position: absolute; /* Absolute position for the container */
     top: 50%; /* Position from the top */
     left: 50%; /* Position from the left */
@@ -116,5 +121,10 @@ body, html {
     z-index: 2; /* Stack order */
     width: 80%; /* Width of the container */
     padding: 20px; /* Padding inside the container */
-    text-align: center; /* Align text to the center */
-  }
+    /* ... rest of your existing .bg-text styles ... */
+}
+
+/* Ensure the landing section also covers the full viewport height */
+#landing {
+    min-height: 100vh;
+}
