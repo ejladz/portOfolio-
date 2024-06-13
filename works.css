@@ -1,22 +1,122 @@
-.work {
-    display: inline-block;
-    border: 1px solid rgb(153, 151, 151);
-    margin: 5px;
-    width: 200px;
-    min-height: 100vh;
+
+body, html {
+    margin: 0;
+    padding: 5px;
+    height: 100%; 
+    background-color: #fdfaf5;
 }
 
-.work .workdesc {
+.gallery {
+    display: inline-block;
+    border: 1px solid rgb(112, 109, 109);
+    border-radius: 16px;
+    margin: 5px;
+    width: 500px;
+    padding: 5px;
+}
+
+.gallery .description {
     padding: 10px;
     text-align: center;
-    
+    font-family: 'Poppins';
 }
 
-.work:hover {
-    border: 1px solid rgb(97, 94, 94);
+.gallery:hover {
+    border: 1px solid rgb(27, 27, 27);
 }
 
-.work img{
+.gallery img {
     width: 100%;
     height: auto;
+    border-radius: 16px;
 }
+
+.gallery .text {
+    font-family: 'Biryani';
+    padding: 10px;
+
+}
+
+/*NAVIGATION*/
+
+.navbar ul {
+    list-style-type: none;
+    background-color: #fdfaf5;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    text-align: center
+}
+
+.navbar a{
+    color: #000000;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    color: #0D3A7E;
+}
+
+.navbar li {
+    float: left;
+    text-align: center
+}
+
+/*OFOOTER*/
+
+/* footer.css */
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D3A7E; /* Light grey background for the entire footer */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#footer-image {
+    max-width: 100px; 
+    margin-left: 20px;
+}
+
+#contact-info {
+    margin-right: 40px;
+    padding: 5px;
+    font-size: 20px;
+    color: #fdfaf5;
+}
+
+#footer-container > p {
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Biryani';
+    color: #fdfaf5;
+}
+
+#footer-container > a {
+    text-decoration: none;
+}
+
+#mail:link, #mail:visited {
+    background-color: #fdfaf5;
+    border: 3px solid #0D3A7E;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Poppins';
+    border-radius: 8px;
+  }
+  
+  #mail:hover, #mail:active {
+    background-color: #0D3A7E;
+    border: 3px solid #fdfaf5;
+    color: #fdfaf5;
+    font-family: 'Poppins';
+  }
