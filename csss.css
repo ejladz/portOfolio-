@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%; 
+    background-color: #fdfaf5;
 }
 
 
@@ -51,6 +52,7 @@ body, html {
     z-index: 10;
     letter-spacing: 20px;
     font-size: 25px;
+    font-family: 'Cardo';
 
 }
 
@@ -107,7 +109,7 @@ body, html {
 
 #about {
     position: relative; 
-    background-color: #a8a7a4; 
+    background-color: #fdfaf5; 
     background-attachment: fixed;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -125,6 +127,10 @@ body, html {
 
 }
 
+#about p {
+    font-family: 'Biryani';
+
+}
 
 #landing {
     min-height: 100vh;
@@ -132,16 +138,54 @@ body, html {
 
 
 
-  #work {
-    /* Removed position: absolute to allow natural document flow */
-    min-height: 100vh;
-    width: 100%;
-    /* Add a top margin to create space between the 'about' and 'work' sections */
-    margin-top: 50px; /* Adjust this value as needed */
+  /*styling about button*/
+  #workbutton:link, a:visited {
+    background-color: #fdfaf5;
+    border: 3px solid #0D3A7E;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Poppins';
+    border-radius: 8px;
+  }
+  
+  #workbutton:hover, #workbutton:active {
+    background-color: #0D3A7E;
+    color: #fdfaf5;
+    font-family: 'Poppins';
   }
 
 
-  /*THIRD PAGE - work*/
+/*CONTACT*/
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #0D3A7E;
+    padding: 10px;
+    text-align: center;
+}
+
+#mail:link, #mail:visited {
+    background-color: #fdfaf5;
+    border: 3px solid #0D3A7E;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Poppins';
+    border-radius: 8px;
+  }
+  
+  #mail:hover, #mail:active {
+    background-color: #0D3A7E;
+    color: #fdfaf5;
+    font-family: 'Poppins';
+  }
 
 
 
