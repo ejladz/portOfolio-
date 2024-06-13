@@ -50,7 +50,7 @@ body, html {
     grid-column: 2;
     margin: 20px;
     z-index: 10;
-    letter-spacing: 20px;
+    letter-spacing: 10px;
     font-size: 25px;
     font-family: 'Cardo';
 
@@ -62,8 +62,7 @@ body, html {
     grid-column-end: 2;
     grid-row-start: 2; 
     grid-row-end: 5;
-    width: 491.9;
-    height: 626.1;
+    width: 400px;
     margin: 10px;
 
 }
