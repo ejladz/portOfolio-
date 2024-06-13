@@ -1,0 +1,22 @@
+.work {
+    display: inline-block;
+    border: 1px solid rgb(153, 151, 151);
+    margin: 5px;
+    width: 200px;
+    min-height: 100vh;
+}
+
+.work .workdesc {
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.work:hover {
+    border: 1px solid rgb(97, 94, 94);
+}
+
+.work img{
+    width: 100%;
+    height: auto;
+}
